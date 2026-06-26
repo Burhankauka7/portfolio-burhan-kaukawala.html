@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burhan Kaukawala — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="scroll-progress"></div>
+
+  <div id="loading-screen">
+    <div class="loader-ring"></div>
+    <div class="loader-name">Burhan<span>.</span></div>
+  </div>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Burhan<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#journey" data-section="journey">Journey</a></li>
+      <li><a href="#skills" data-section="skills">Skills</a></li>
+      <li><a href="#projects" data-section="projects">Projects</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav id="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-3"></div>
+    </div>
+    <div class="spotlight" id="spotlight"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <div class="badge-dot"></div>
+        🚀 Available for Remote Frontend Role
+      </div>
+      <h1 class="hero-name reveal reveal-delay-1">
+        Burhan<br>
+        <span class="gradient-text">Kaukawala</span>
+      </h1>
+      <p class="hero-role reveal reveal-delay-2">
+        <span class="role-highlight">Web Developer</span> — Building the modern web
+      </p>
+      <p class="hero-desc reveal reveal-delay-3">
+        BCA student and web developer from Surat, India. I craft clean, responsive
+        interfaces with HTML, CSS, JavaScript, and React — currently seeking remote
+        frontend opportunities.
+      </p>
+      <div class="hero-ctas reveal reveal-delay-4">
+        <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="./Burhan_kauka_resume.pdf" target="_blank" class="btn btn-outline">Download Resume</a>
+      </div>
+      <div class="hero-tech-stack reveal reveal-delay-5">
+        <span class="tech-pill"><span class="tech-icon">🟠</span>HTML5</span>
+        <span class="tech-pill"><span class="tech-icon">🔵</span>CSS3</span>
+        <span class="tech-pill"><span class="tech-icon">🟡</span>JavaScript</span>
+        <span class="tech-pill"><span class="tech-icon">⚛️</span>React</span>
+        <span class="tech-pill"><span class="tech-icon">🐙</span>GitHub</span>
+        <span class="tech-pill"><span class="tech-icon">🐍</span>Python</span>
+      </div>
+    </div>
+
+    <!-- Floating stat cards (right side, desktop only) -->
+    <div class="hero-image-area">
+      <div class="floating-card">
+        <div class="fc-label">Projects Built</div>
+        <div class="fc-value gradient-text">4+</div>
+        <div class="fc-sub">Real-world web apps</div>
+        <div class="fc-bar"><div class="fc-bar-fill" style="width:80%"></div></div>
+      </div>
+      <div class="floating-card">
+        <div class="fc-label">Current Focus</div>
+        <div class="fc-value" style="font-size:1.1rem">React & TypeScript</div>
+        <div class="fc-sub">Levelling up daily</div>
+      </div>
+      <div class="floating-card">
+        <div class="fc-label">Status</div>
+        <div class="fc-value" style="font-size:1rem;color:#22c55e">Open to Hire</div>
+        <div class="fc-sub">Remote · Full-time</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──── ABOUT ──── -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Crafting Digital<br>Experiences</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I am a BCA student and Web Developer at Cimpress India with a strong passion for building 
+          polished, responsive web experiences. My background in visual design helps me create 
+          user-friendly interfaces that are both aesthetically refined and technically solid.
+        </p>
+        <p>
+          I am actively building projects using HTML, CSS, JavaScript, React, and APIs while 
+          seeking frontend developer opportunities. I believe great software is designed, 
+          not just coded — every pixel and interaction matters.
+        </p>
+        <div style="margin-top:8px">
+          <span style="display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;color:var(--text-muted)">
+            📍 Surat, India &nbsp;·&nbsp; 🎓 Manipal University &nbsp;·&nbsp; 💼 Cimpress India
+          </span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-number">BCA</div>
+          <div class="stat-label">Final Year</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Frontend Focus</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-4">
+          <div class="stat-number">✓</div>
+          <div class="stat-label">Open to Hire</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──── JOURNEY ──── -->
+  <section id="journey">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label reveal" style="justify-content:center">Journey</div>
+      <h2 class="section-title reveal">My Path So Far</h2>
+      <p class="section-subtitle reveal" style="margin:0 auto">From learning the fundamentals to building real projects — here's how I got here.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-step">Step 01</div>
+          <div class="timeline-title">🎓 BCA Student</div>
+          <div class="timeline-sub">Enrolled in Bachelor of Computer Applications at Manipal University — building a strong foundation in computing and programming.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-step">Step 02</div>
+          <div class="timeline-title">💼 Web Developer at Cimpress India</div>
+          <div class="timeline-sub">Contributing to real-world web projects while gaining professional experience in the tech industry.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-step">Step 03</div>
+          <div class="timeline-title">⚡ Learning Frontend Development</div>
+          <div class="timeline-sub">Deep-diving into HTML, CSS, JavaScript, React, and modern tooling — turning theory into hands-on practice every day.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-step">Step 04</div>
+          <div class="timeline-title">🚀 Building Real Projects</div>
+          <div class="timeline-sub">Shipping apps like a Pokédex, Weather App, GitHub Finder, and Expense Tracker — real code, real deployments, real learning.</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-4">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-step">Step 05</div>
+          <div class="timeline-title">🌏 Open to Opportunities</div>
+          <div class="timeline-sub">Actively seeking a remote frontend developer role where I can contribute, grow, and build great products.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──── SKILLS ──── -->
+  <section id="skills">
+    <div class="section-header">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title reveal">What I Work With</h2>
+      <p class="section-subtitle reveal">Tools and technologies I use to bring ideas to life.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <div class="category-header">
+          <div class="category-icon">🌐</div>
+          <div class="category-title">Core Web</div>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:92%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">CSS3</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">JavaScript ES6+</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">Responsive Design</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">Flexbox & Grid</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="category-header">
+          <div class="category-icon">🔌</div>
+          <div class="category-title">APIs & Data</div>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">REST APIs</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:78%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">Fetch API</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:82%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">JSON</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">LocalStorage / DOM</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="category-header">
+          <div class="category-icon">🛠️</div>
+          <div class="category-title">Frameworks & Tools</div>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">72%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:72%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">Git & GitHub</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:78%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">VS Code / npm</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">60%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:60%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="category-header">
+          <div class="category-icon">📚</div>
+          <div class="category-title">Currently Learning</div>
+        </div>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">React Hooks</span><span class="skill-pct">65%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">TypeScript</span><span class="skill-pct">45%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:45%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span class="skill-name">Node.js</span><span class="skill-pct">40%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--target-width:40%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──── PROJECTS ──── -->
+  <section id="projects">
+    <div class="section-header">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title reveal">What I've Built</h2>
+      <p class="section-subtitle reveal">Real apps. Real code. Learning by doing.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal" data-tilt>
+        <div class="project-bg grad-1"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <div class="coming-soon-badge">⏳ Coming Soon</div>
+          <div>
+            <div class="project-title">Pokédex App</div>
+            <div class="project-desc">Fetches Pokémon data from the PokéAPI and displays a beautiful, filterable card UI.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1" data-tilt>
+        <div class="project-bg grad-2"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <div class="coming-soon-badge">⏳ Coming Soon</div>
+          <div>
+            <div class="project-title">GitHub Profile Finder</div>
+            <div class="project-desc">Search any GitHub user and view their repos, followers, and stats in real time.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2" data-tilt>
+        <div class="project-bg grad-3"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <div class="coming-soon-badge">⏳ Coming Soon</div>
+          <div>
+            <div class="project-title">Weather App</div>
+            <div class="project-desc">Live weather data by city using the OpenWeather API with animated weather icons.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3" data-tilt>
+        <div class="project-bg grad-4"></div>
+        <div class="project-overlay"></div>
+        <div class="project-content">
+          <div class="coming-soon-badge">⏳ Coming Soon</div>
+          <div>
+            <div class="project-title">Expense Tracker</div>
+            <div class="project-desc">Track income and expenses with category filtering, persistent localStorage, and charts.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ──── CONTACT ──── -->
+  <section id="contact">
+    <div class="section-header" style="text-align:center">
+      <div class="section-label reveal" style="justify-content:center">Contact</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <p class="section-subtitle reveal" style="margin:0 auto">Have a project in mind or want to connect? I'd love to hear from you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div>
+          <div class="contact-heading">Get in Touch</div>
+          <p class="contact-text">
+            I'm actively looking for remote frontend opportunities. Whether you have a role, 
+            a project, or just want to connect — my inbox is open.
+          </p>
+        </div>
+        <div class="availability-badge">
+          <div class="avail-dot"></div>
+          Available for work
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div class="contact-detail-text">
+            <div class="label">Location</div>
+            <div class="value">Surat, Gujarat, India</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-detail-text">
+            <div class="label">Email</div>
+            <div class="value">burhankauka76@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">💼</div>
+          <div class="contact-detail-text">
+            <div class="label">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/burhan-kaukawala-ba3b71211/" target="_blank">
+              <div class="value">burhan-kaukawala</div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-detail-text">
+            <div class="label">GitHub</div>
+            <a href="https://github.com/Burhankauka7" target="_blank">
+              <div class="value">Burhankauka7</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-2">
+        <form onsubmit="return false">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input class="form-input" type="text" id="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input" type="email" id="email" placeholder="jane@company.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-textarea" id="message" placeholder="Tell me about the opportunity..."></textarea>
+          </div>
+          <button class="form-submit" type="submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──── FOOTER ──── -->
+  <footer>
+    <div class="footer-logo">Burhan<span>.</span></div>
+    <div class="footer-copy">© 2026 Burhan Kaukawala · All rights reserved.</div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
